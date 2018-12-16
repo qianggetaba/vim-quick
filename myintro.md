@@ -1,4 +1,4 @@
-# yet another Introduction
+# Yet Another Introduction
 
 简单说说vim，应该持什么样的态度去看待与使用vim。
 

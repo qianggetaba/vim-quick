@@ -3,19 +3,25 @@
 vim自带的帮助文档，可以学习很多命令，进入vim编辑器命令模式，输入[:help],看帮助文档
 
 
-hjkl  左下上右 (一般使用方向键就行)  
+hjkl  左下上右 (一般使用方向键就行)
 w  光标移动到下一词  
 b  与w反向  
 ctrl ]  进入当前光标下的tag  
 ctrl o  返回，与ctrl ]相反, jump list  
 ctrl t  返回，tag stack  
-crtl f  下翻页  (pgup 与 pgdn 上下翻页键)  
-ctrl b  上翻页  
-x  删一个字符  
-3x 删除3个字符，数字理解为3倍的x命令效果  
-dd 删除一行  
-dw 删除一个词  
-u  撤销  
+crtl f  下翻页,光标移动到页顶 (就记住可用 pgup 与 pgdn 上下翻页键)  
+ctrl b  上翻页,光标移动到页底
+ctrl d  下翻半页，光标位置不对
+ctrl u  上翻半页
+ctrl e  下翻一行
+ctrl y  上翻一行
+
+x  删一个字符
+3x 删除3个字符，数字理解为3倍的x命令效果
+dd 删除一行
+3dd  删除光标处三行
+dw 删除一个词
+u  撤销
 ctrl r  redo,反撤销  
 U  撤销行修改，按两次，redo  
 J  下一行合并到光标行，自动加空格  
@@ -48,3 +54,8 @@ end键   行尾
 /normal   查找字符串normal  
 n  上面的查找后，n可以直接查找下一个  
 N  查找后，N与n反向查找  
+
+:set mouse=a  使用鼠标滚动页面，而不是移动光标，点击定位光标
+:set mouse-=a 关闭鼠标
+
+crtl v 开始列编辑选择

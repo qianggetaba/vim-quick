@@ -59,3 +59,19 @@ N  查找后，N与n反向查找
 :set mouse-=a 关闭鼠标
 
 crtl v 开始列编辑选择
+
+:set showcmd 显示normal模式输入的命令
+
+vim -p one.txt two.txt  多文件tab窗口编辑
+gt   切换到下一个tab窗口
+2gt  切换到低2个tab窗口
+:qa! 退出全部tab
+:wqa 保存
+
+"ay  复制到a寄存器，寄存器是["a]
+"ap  粘贴a寄存器内容
+
+:make target   编译makefile
+:cw   当编译出现问题时显示errorlist window, 移动到报错显示的文件行上，enter进入文件窗口编辑
+ctrl ww  errorlist wondow与编辑窗口切换
+

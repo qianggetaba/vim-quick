@@ -13,8 +13,11 @@ crtl f  下翻页,光标移动到页顶 (就记住可用 pgup 与 pgdn 上下翻
 ctrl b  上翻页,光标移动到页底
 ctrl d  下翻半页，光标位置不对
 ctrl u  上翻半页
-ctrl e  下翻一行
-ctrl y  上翻一行
+ctrl e  下翻一行，光标行不变
+ctrl y  上翻一行，光标行不变
+zz 光标行置于中间，光标行不变  ZZ 保存并退出vim
+zt 光标行置于顶，光标行不变
+zb 光标行置于底，光标行不变
 
 x  删一个字符
 3x 删除3个字符，数字理解为3倍的x命令效果
@@ -74,4 +77,6 @@ gt   切换到下一个tab窗口
 :make target   编译makefile
 :cw   当编译出现问题时显示errorlist window, 移动到报错显示的文件行上，enter进入文件窗口编辑
 ctrl ww  errorlist wondow与编辑窗口切换
+
+
 
